@@ -19,7 +19,7 @@ requires: accessibility permissions (to access selected text and to replace it, 
 2. Mount the dmg and move .app file to /Applications
 3. Run the app
 
-Update to a new version: simply grab the newest dmg from Releases and replace your existing .app file in /Applications folder. Your existing profiles and lenses will be preserved.
+Update to a new version: simply grab the newest dmg from Releases and replace your existing .app file in /Applications folder. Your existing Tools will be preserved.
 
 ## Usage
 1. select any text
