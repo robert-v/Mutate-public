@@ -34,7 +34,7 @@ Update to a new version: simply grab the newest dmg from Releases and replace yo
 - register as startup item to be always available
 - define your own shortcut
 
-- ## Explore My macOS Apps
+## Explore My macOS Apps
   
 [ProcessSpy - Advanced process monitor for Mac](https://process-spy.app)
 
