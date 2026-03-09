@@ -33,3 +33,12 @@ Update to a new version: simply grab the newest dmg from Releases and replace yo
 - ability to define your own transformation tools with Javascript (the tool comes with a few default tools)
 - register as startup item to be always available
 - define your own shortcut
+
+- ## Explore My macOS Apps
+  
+[ProcessSpy - Advanced process monitor for Mac](https://process-spy.app)
+
+[Restretto - Minimal REST client for Mac](https://restretto.app)
+
+[Essence - free minimal and focused log viewer for macOS](https://github.com/robert-v/Essence-public)
+
