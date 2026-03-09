@@ -1,5 +1,5 @@
 # Mutate
-Inline text transformation for Mac
+Inline text transformation for Mac (menu bar)
 
 <img width="655" height="415" alt="image" src="https://github.com/user-attachments/assets/185a7d9a-7c2d-448f-b0e8-f987c45adb12" />
 
@@ -30,7 +30,7 @@ Update to a new version: simply grab the newest dmg from Releases and replace yo
 
 ## Features
 - seamless text replacement without interrupting your worklfow and without switching to a differnt window
-- ability to define your own transformation tools with Javascript (the tool comes with a few default tools)
+- ability to define your own transformation tools with Javascript (the app comes with a few default tools)
 - register as startup item to be always available
 - define your own shortcut
 
