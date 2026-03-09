@@ -21,7 +21,7 @@ Update to a new version: simply grab the newest dmg from Releases and replace yo
 
 ## Usage
 1. select any text
-2. trigger Mutate with defined shortcut (default is Cmd + Shift + u)
+2. trigger Mutate with the defined shortcut (default is Cmd + Shift + u)
 3. choose a tool from the list
 4. press enter
 5. selected text will be replaced with the output
