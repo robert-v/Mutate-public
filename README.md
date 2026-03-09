@@ -28,6 +28,6 @@ Update to a new version: simply grab the newest dmg from Releases and replace yo
 
 ## Features
 - seamless text replacement without interrupting your worklfow and without switching to a differnt window
-- ability to define your own tools with Javascript (the tool comes with a few default tools)
+- ability to define your own transformation tools with Javascript (the tool comes with a few default tools)
 - register as startup item to be always available
 - define your own shortcut
