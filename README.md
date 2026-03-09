@@ -40,5 +40,5 @@ Update to a new version: simply grab the newest dmg from Releases and replace yo
 
 [Restretto - Minimal REST client for Mac](https://restretto.app)
 
-[Essence - free minimal and focused log viewer for macOS](https://github.com/robert-v/Essence-public)
+[Essence - Minimal and focused log viewer for Mac](https://github.com/robert-v/Essence-public)
 
