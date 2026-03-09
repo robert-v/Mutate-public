@@ -11,6 +11,8 @@ Inline text transformation for Mac
 
 macOS 14+, universal .app in .dmg archive, notarized
 
+requires: accessibility permissions (to access selected text and to replace it, also accesses clipboard to bypass limitations of certain tools)
+
 ## Installation
 
 1. Download dmg archive (from releases on the right side of this page)
