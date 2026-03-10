@@ -1,5 +1,5 @@
 # Mutate
-Inline text transformation for Mac (menu bar)
+Inline text transformations for Mac (menu bar, via shortcut)
 
 <img width="655" height="415" alt="image" src="https://github.com/user-attachments/assets/185a7d9a-7c2d-448f-b0e8-f987c45adb12" />
 
