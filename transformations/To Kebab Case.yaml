@@ -1,0 +1,11 @@
+type: MutateTool
+name: "To Kebab Case"
+jsCode: |-
+  function transform(text) {
+      if (!text) return text;
+      
+      return text
+      .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
+      .map(x => x.toLowerCase())
+      .join('-');
+  }
