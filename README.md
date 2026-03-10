@@ -62,6 +62,10 @@ function transform(text) {
 
 See more examples under [transformations](https://github.com/robert-v/Mutate-public/tree/main/transformations) folder
 
+## Limitations
+- Tools selector location - the tool tries to read selected text rectangle and change it's location accordingly, but some apps don't report this
+- Terminals - the transformed text will not overwrite selected text but will appear at the cusor position
+
 ## Explore My macOS Apps
   
 [ProcessSpy - Advanced process monitor for Mac](https://process-spy.app)
