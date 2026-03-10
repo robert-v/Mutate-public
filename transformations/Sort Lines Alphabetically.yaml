@@ -1,0 +1,15 @@
+type: MutateTool
+name: "Sort Lines Alphabetically"
+jsCode: |-
+  function transform(text) {
+      if (!text) return "";
+      
+      var lines = text.split('\n');
+      
+      // Sorts case-insensitively (e.g., apple, Banana, car, Zebra)
+      lines.sort(function(a, b) {
+          return a.localeCompare(b, undefined, { sensitivity: 'base' });
+      });
+      
+      return lines.join('\n');
+  }
