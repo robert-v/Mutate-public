@@ -18,6 +18,7 @@ requires: accessibility permissions (to access selected text and to replace it, 
 1. Download dmg archive (from releases on the right side of this page)
 2. Mount the dmg and move .app file to /Applications
 3. Run the app
+4. The tool comes with a few pre-installed transformations. You can import more tools from [transformations](https://github.com/robert-v/Mutate-public/tree/main/transformations) folder or create your own transformations. Contributions are welcome!
 
 Update to a new version: simply grab the newest dmg from Releases and replace your existing .app file in /Applications folder. Your existing Tools will be preserved.
 
