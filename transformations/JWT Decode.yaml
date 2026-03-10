@@ -1,0 +1,69 @@
+type: MutateTool
+name: "JWT Decode"
+jsCode: |-
+  function transform(text) {
+      try {
+          var parts = text.trim().split('.');
+          if (parts.length !== 3) {
+              return "Error: Not a valid JWT (requires 3 parts separated by dots).";
+          }
+  
+          // Clean, standard pure JS Base64Url Decoder (No native injection required)
+          function decodeBase64Url(str) {
+              // 1. Convert Base64Url to standard Base64
+              var base64 = str.replace(/-/g, '+').replace(/_/g, '/');
+              
+              // 2. Pad to correct length
+              while (base64.length % 4) {
+                  base64 += '=';
+              }
+              
+              var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+              var output = '';
+              var i = 0;
+              
+              // 3. Clean any illegal characters before parsing
+              base64 = base64.replace(/[^A-Za-z0-9\+\/\=]/g, '');
+              
+              // 4. Reliable bitwise conversion (avoids the bugs of the compressed loop)
+              while (i < base64.length) {
+                  var enc1 = chars.indexOf(base64.charAt(i++));
+                  var enc2 = chars.indexOf(base64.charAt(i++));
+                  var enc3 = chars.indexOf(base64.charAt(i++));
+                  var enc4 = chars.indexOf(base64.charAt(i++));
+                  
+                  var chr1 = (enc1 << 2) | (enc2 >> 4);
+                  var chr2 = ((enc2 & 15) << 4) | (enc3 >> 2);
+                  var chr3 = ((enc3 & 3) << 6) | enc4;
+                  
+                  output += String.fromCharCode(chr1);
+                  
+                  // Only append the characters if they weren't padding
+                  if (enc3 !== 64) {
+                      output += String.fromCharCode(chr2);
+                  }
+                  if (enc4 !== 64) {
+                      output += String.fromCharCode(chr3);
+                  }
+              }
+              
+              // 5. Safely convert the binary string into proper UTF-8
+              try {
+                  return decodeURIComponent(escape(output));
+              } catch (e) {
+                  return output; 
+              }
+          }
+  
+          var headerRaw = decodeBase64Url(parts[0]);
+          var payloadRaw = decodeBase64Url(parts[1]);
+  
+          var header = JSON.parse(headerRaw);
+          var payload = JSON.parse(payloadRaw);
+  
+          return JSON.stringify({ "Header": header, "Payload": payload }, null, 2);
+  
+      } catch (e) {
+          return "Error decoding JWT: " + e.message;
+      }
+  }
