@@ -1,0 +1,27 @@
+type: MutateTool
+name: "To Programmatic String"
+jsCode: |-
+  function transform(text) {
+      if (!text) return "";
+      
+      var lines = text.split('\n');
+      var output = [];
+      
+      for (var i = 0; i < lines.length; i++) {
+          // 1. Escape existing backslashes first (so we don't double-escape our quotes)
+          // 2. Escape existing double quotes
+          var escaped = lines[i]
+              .replace(/\\/g, '\\\\')
+              .replace(/"/g, '\\"');
+          
+          // Append an inner \n to all lines except the very last one
+          // so the resulting concatenated string preserves line breaks
+          if (i < lines.length - 1) {
+              output.push('"' + escaped + '\\n" +');
+          } else {
+              output.push('"' + escaped + '";'); // Optional: Add a semicolon to end the statement
+          }
+      }
+      
+      return output.join('\n');
+  }
