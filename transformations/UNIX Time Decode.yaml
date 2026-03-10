@@ -1,0 +1,26 @@
+type: MutateTool
+name: "UNIX Time Decode"
+jsCode: |-
+  function transform(text) {
+      var cleanText = text.trim();
+      if (!cleanText) return "";
+  
+      var timestamp = Number(cleanText);
+      if (isNaN(timestamp)) {
+          return "Error: Invalid timestamp";
+      }
+  
+      // Auto-detect seconds vs milliseconds
+      // If it's less than 10 billion (Year 2286), assume it's in seconds
+      if (Math.abs(timestamp) < 10000000000) {
+          timestamp *= 1000;
+      }
+  
+      var date = new Date(timestamp);
+      if (isNaN(date.getTime())) {
+          return "Error: Invalid Date";
+      }
+  
+      // Returns formatted UTC string (e.g., "2026-03-10 13:37:00 UTC")
+      return date.toISOString().replace('T', ' ').replace('.000Z', ' UTC');
+  }
