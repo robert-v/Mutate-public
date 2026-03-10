@@ -33,6 +33,31 @@ Update to a new version: simply grab the newest dmg from Releases and replace yo
 - ability to define your own transformation tools with Javascript (the app comes with a few default tools)
 - register as startup item to be always available
 - define your own shortcut
+- import/export transformations to yaml
+
+## Custom transformation examples
+
+Custom transformation must contain function with the name ```transform``` and parameter ```text```. The function is expected to return a transformed string.
+
+Format JSON:
+
+```
+function transform(text) {
+    try {
+        // 1. Sanitize the string first
+        var sanitizedText = text
+            .replace(/[“”]/g, '"')  // Fix macOS curly double quotes
+            .replace(/[‘’]/g, "'")  // Fix macOS curly single quotes
+            .replace(/'/g, '"');    // Attempt to convert JS single quotes to JSON double quotes
+            
+        // 2. Parse and format
+        var parsed = JSON.parse(sanitizedText);
+        return JSON.stringify(parsed, null, 2);
+    } catch(e) {
+        return "Error formatting JSON: " + e.message;
+    }
+}
+```
 
 ## Explore My macOS Apps
   
