@@ -59,6 +59,8 @@ function transform(text) {
 }
 ```
 
+See more examples under [transformations](https://github.com/robert-v/Mutate-public/tree/main/transformations) folder
+
 ## Explore My macOS Apps
   
 [ProcessSpy - Advanced process monitor for Mac](https://process-spy.app)
