@@ -62,7 +62,8 @@ See more examples under [transformations](https://github.com/robert-v/Mutate-pub
 
 ## Limitations
 - Tools selector location - the tool tries to read selected text rectangle and change it's location accordingly, but some apps don't report this. In such case the tool falls back to mouse poiner location.
-- Terminals - the transformed text will not overwrite selected text but will appear at the cusor position
+- Terminals - the transformed text will not overwrite selected text but will appear at the cusor position,
+- Rich text - the tool currently doesn't preserve rich text formatting and will output plain text if rich text is provided as an input.
 
 ## Explore My macOS Apps
   
