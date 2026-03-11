@@ -3,13 +3,12 @@ Inline text transformations for Mac (menu bar, via shortcut)
 
 **Go from this:**
 
-<img width="655" height="415" alt="image" src="https://github.com/user-attachments/assets/185a7d9a-7c2d-448f-b0e8-f987c45adb12" />
-
+<img width="528" height="412" alt="image" src="https://github.com/user-attachments/assets/1d8cbf79-4439-4406-ba70-c3487f390fd2" />
 
 **to this:**
 ###
 
-<img width="213" height="64" alt="image" src="https://github.com/user-attachments/assets/01cf54b7-6065-443c-b9f9-d529aaab24c3" />
+<img width="361" height="115" alt="image" src="https://github.com/user-attachments/assets/3a96c757-e1c3-489b-b8a7-3e54f528556e" />
 
 **in 3 seconds.**
 
