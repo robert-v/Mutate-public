@@ -1,16 +1,8 @@
 # Mutate
 Inline text transformations for Mac (menu bar, via shortcut)
 
-**Go from this:**
+![Mutate in action](https://github.com/user-attachments/assets/c9906548-b051-4417-a83d-0027e25336bf)
 
-<img width="528" height="412" alt="image" src="https://github.com/user-attachments/assets/1d8cbf79-4439-4406-ba70-c3487f390fd2" />
-
-**to this:**
-###
-
-<img width="361" height="115" alt="image" src="https://github.com/user-attachments/assets/3a96c757-e1c3-489b-b8a7-3e54f528556e" />
-
-**in 3 seconds.**
 
 ## Requirements
 macOS 14+, universal .app in .dmg archive, notarized
