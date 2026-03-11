@@ -1,17 +1,30 @@
 # Mutate
 Inline text transformations for Mac (menu bar, via shortcut)
 
+*Go from this:*
+
 <img width="655" height="415" alt="image" src="https://github.com/user-attachments/assets/185a7d9a-7c2d-448f-b0e8-f987c45adb12" />
 
 
+*to this:*
 ###
 
 <img width="213" height="64" alt="image" src="https://github.com/user-attachments/assets/01cf54b7-6065-443c-b9f9-d529aaab24c3" />
 
+*in 3 seconds.*
 
+## Requirements
 macOS 14+, universal .app in .dmg archive, notarized
 
 requires: accessibility permissions (to access selected text and to replace it, also accesses clipboard to bypass limitations of certain tools)
+
+## Features
+- native and lightweight (~1 MB)
+- seamless text replacement without interrupting your worklfow and without switching to a differnt window
+- ability to define your own transformation tools with Javascript (the app comes with a few default tools)
+- register as startup item to be always available
+- define your own shortcut
+- import/export transformations to yaml
 
 ## Installation
 
@@ -28,13 +41,6 @@ Update to a new version: simply grab the newest dmg from Releases and replace yo
 3. choose a tool from the list
 4. press enter
 5. selected text will be replaced with the output
-
-## Features
-- seamless text replacement without interrupting your worklfow and without switching to a differnt window
-- ability to define your own transformation tools with Javascript (the app comes with a few default tools)
-- register as startup item to be always available
-- define your own shortcut
-- import/export transformations to yaml
 
 ## Custom transformation examples
 
