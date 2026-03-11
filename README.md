@@ -1,8 +1,7 @@
 # Mutate
 Inline text transformations for Mac (menu bar, via shortcut)
 
-![Mutate in action](https://github.com/user-attachments/assets/c9906548-b051-4417-a83d-0027e25336bf)
-
+https://github.com/user-attachments/assets/fbff612e-c195-4bdd-a5ce-fb98688e6b6c
 
 ## Requirements
 macOS 14+, universal .app in .dmg archive, notarized
