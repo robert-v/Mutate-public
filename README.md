@@ -1,8 +1,6 @@
 # Mutate
 Inline text replacement and generation utility for Mac (menu bar, via shortcut)
 
-https://github.com/user-attachments/assets/fbff612e-c195-4bdd-a5ce-fb98688e6b6c
-
 ## Requirements
 macOS 14+, universal .app in .dmg archive, notarized
 
