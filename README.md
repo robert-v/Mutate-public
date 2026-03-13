@@ -1,5 +1,5 @@
 # Mutate
-Inline text transformations for Mac (menu bar, via shortcut)
+Inline text replacement for Mac (menu bar, via shortcut)
 
 https://github.com/user-attachments/assets/fbff612e-c195-4bdd-a5ce-fb98688e6b6c
 
@@ -16,6 +16,13 @@ requires: accessibility permissions (to access selected text and to replace it, 
 - register as startup item to be always available
 - define your own shortcut
 - import/export transformations to yaml
+
+## Use cases
+- Expand abbreviations
+- Conversions
+- Encoding / decoding
+- Sorting
+- and more
 
 ## Installation
 
