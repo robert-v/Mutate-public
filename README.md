@@ -2,6 +2,10 @@
 Inline text replacement and generation utility for Mac (menu bar, via shortcut)
 
 
+https://github.com/user-attachments/assets/2cde34be-ae6e-489e-96b0-3b4ee6c58c89
+
+
+
 
 ## Requirements
 macOS 14+, universal .app in .dmg archive, notarized
