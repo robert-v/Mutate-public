@@ -24,7 +24,7 @@ requires: accessibility permissions (to access selected text and to replace it, 
 3. Run the app
 4. The tool comes with a few pre-installed transformations. You can import more from the [transformations](https://github.com/robert-v/Mutate-public/tree/main/transformations) folder or create your own transformations. Contributions are welcome!
 
-Update to a new version: simply grab the newest dmg from Releases and replace your existing .app file in /Applications folder. Your existing Tools will be preserved.
+Update to a new version: simply grab the newest dmg from Releases and replace your existing .app file in /Applications folder. Your existing Transformations will be preserved.
 
 ## Usage
 1. select any text
