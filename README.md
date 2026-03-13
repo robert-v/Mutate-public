@@ -1,5 +1,5 @@
 # Mutate
-Inline text replacement utility for Mac (menu bar, via shortcut)
+Inline text replacement and generation utility for Mac (menu bar, via shortcut)
 
 https://github.com/user-attachments/assets/fbff612e-c195-4bdd-a5ce-fb98688e6b6c
 
@@ -10,18 +10,21 @@ requires: accessibility permissions (to access selected text and to replace it, 
 
 ## Features
 - native and lightweight (~1 MB)
+- works in any window
 - completely offline
-- seamless text replacement without interrupting your worklfow and without switching to a differnt window
-- ability to define your own transformation tools with Javascript (the app comes with a few default tools)
+- seamless text replacement or generation without interrupting your worklfow and without switching to a differnt window
+- ability to define your own transformation and generation tools with Javascript (the app comes with a few default tools)
 - register as startup item to be always available
 - define your own shortcut
-- import/export transformations to yaml
+- import/export tools to yaml
 
 ## Use cases
 - Expanding abbreviations
 - Conversions
 - Encoding / decoding
 - Sorting
+- Templates
+- Lorem ipsum generation
 - and more
 
 ## Installation
@@ -29,18 +32,19 @@ requires: accessibility permissions (to access selected text and to replace it, 
 1. Download dmg archive (from releases on the right side of this page)
 2. Mount the dmg and move .app file to /Applications
 3. Run the app
-4. The tool comes with a few pre-installed transformations. You can import more from the [transformations](https://github.com/robert-v/Mutate-public/tree/main/transformations) folder or create your own transformations. Contributions are welcome!
+4. The tool comes with a few pre-installed transformations and generators. You can import more from the [transformations](https://github.com/robert-v/Mutate-public/tree/main/transformations) folder and [generators](https://github.com/robert-v/Mutate-public/tree/main/generators) folder or create your own. Contributions are welcome!
 
 Update to a new version: simply grab the newest dmg from Releases and replace your existing .app file in /Applications folder. Your existing Transformations will be preserved.
 
 ## Usage
-1. select any text
-2. trigger Mutate with the defined shortcut (default is Cmd + Shift + u)
-3. choose a tool from the list
-4. press enter
-5. selected text will be replaced with the output
+1. trigger Mutate with the defined shortcut (default is ```Cmd + Shift + u```)
+2. popup will show Transformations or Generators depending on whether any text is selected or not
+3. you can toggle between Tranformations and Generators with ```Ctrl + Tab```
+4. choose a tool from the list
+5. press enter
+6. selected text will be replaced with the output or text will be injected at cursor position
 
-## Custom transformation examples
+## Custom transformations
 
 Custom transformation must contain function with the name ```transform``` and parameter ```text```. The function is expected to return a transformed string.
 
@@ -64,7 +68,19 @@ function transform(text) {
 }
 ```
 
-See more examples under [transformations](https://github.com/robert-v/Mutate-public/tree/main/transformations) folder
+See more examples under [transformations](https://github.com/robert-v/Mutate-public/tree/main/transformations) folder.
+
+## Custom generators
+
+Custom generators must contain function with the name ```generate``` and no parameters. The function is expected tu return generated string.
+
+```
+function generate() {
+    return "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+}
+```
+
+See more examples under [generators](https://github.com/robert-v/Mutate-public/tree/main/generators) folder.
 
 ## Limitations
 - Tools selector location - the tool tries to read selected text rectangle and change it's location accordingly, but some apps don't report this. In such case the tool falls back to mouse poiner location.
