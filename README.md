@@ -32,7 +32,7 @@ requires:
 ## Installation
 
 1. Download dmg archive (from releases on the right side of this page)
-2. Mount the dmg and move .app file to /Applications
+2. Mount the dmg and move .app file to /Applications folder
 3. Run the app
 4. The tool comes with a few pre-installed transformations and generators. You can import more from the [transformations](https://github.com/robert-v/Mutate-public/tree/main/transformations) folder and [generators](https://github.com/robert-v/Mutate-public/tree/main/generators) folder or create your own. Contributions are welcome!
 
@@ -86,7 +86,6 @@ See more examples under [generators](https://github.com/robert-v/Mutate-public/t
 
 ## Limitations
 - Tools selector location - the tool tries to read selected text rectangle and change it's location accordingly, but some apps don't report this. In such case the tool falls back to mouse poiner location.
-- Shortcut is intended to work only when text is selected. Some tools however report whole line selection even if nothing is selected.
 - Terminals - the transformed text will not overwrite selected text but will appear at the cusor position,
 - Rich text - the tool currently doesn't preserve rich text formatting and will output plain text if rich text is provided as an input.
 
