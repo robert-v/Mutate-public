@@ -6,10 +6,12 @@ https://github.com/user-attachments/assets/fbff612e-c195-4bdd-a5ce-fb98688e6b6c
 ## Requirements
 macOS 14+, universal .app in .dmg archive, notarized
 
-requires: accessibility permissions (to access selected text and to replace it, also accesses clipboard to bypass limitations of certain tools)
+requires: 
+- accessibility permissions (to access selected text and to replace it, also accesses clipboard to bypass limitations of certain tools)
+- outgoing network connection to support Monaco editor
 
 ## Features
-- native and lightweight (~1 MB)
+- native
 - works in any window
 - completely offline
 - seamless text replacement or generation without interrupting your worklfow and without switching to a differnt window
