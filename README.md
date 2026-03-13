@@ -42,7 +42,7 @@ Update to a new version: simply grab the newest dmg from Releases and replace yo
 3. you can toggle between Tranformations and Generators with ```Ctrl + Tab```
 4. choose a tool from the list
 5. press enter
-6. selected text will be replaced with the output or text will be injected at cursor position
+6. selected text will be replaced with the output or text will be injected at the cursor position
 
 ## Custom transformations
 
