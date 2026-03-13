@@ -18,7 +18,7 @@ requires: accessibility permissions (to access selected text and to replace it, 
 - import/export transformations to yaml
 
 ## Use cases
-- Expand abbreviations
+- Expanding abbreviations
 - Conversions
 - Encoding / decoding
 - Sorting
